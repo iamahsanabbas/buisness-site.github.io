@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
+
+
+body{
+    font-family: 'poppins';
+}
+
+.navbar-brand{
+    font-size: 35px;
+    font-weight: 700;
+    color: #f25c6c !important;
+}
+.navbar .navbar-nav .nav-link{
+    /* color: #f25c6c !important; */
+    font-size: 17px !important;
+    margin: 0 15px;
+    font-weight: 500 !important;
+
+
+}
+.navbar{
+    /* background: transparent !important; */
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: #f25c6c !important;
+
+}
+.social-icons a{
+    width: 34px;
+    height: 34px;
+   
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    margin: 0 1px;
+    background-color:  #f25c6c;
+    
+}
+.social-icons a:hover{
+    background-color: rgb(221, 215, 215);
+    color: rgb(242, 92, 108);
+}
+
+/* banner  */
+
+.bg-cover{
+    background-position: center;
+    background-size: cover;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+    background-image:linear-gradient(rgba(242,92,108,.3),rgba(242,92,108,.3)), url(../images/banner1.jpg);
+
+    /* background-image: url(../images/banner1.jpg);   */
+    background-attachment: fixed;
+}
+
+.banner-content h6{
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
+
+}
+.banner-content p{
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    padding-top: 30px;
+
+}
+p{
+    color: rgb(74, 72, 72);
+}
+.btn{
+    /* padding: 9px 24px !important; */
+}
+.btn-brand{
+    width: 160px !important;
+    color: white;
+    background-color: #f25c6c;
+    background-image: linear-gradient(to right, #f25c6c,#d3c310);
+
+    font-size: 18px;
+    border-radius: 30px;
+    margin-right: 10px;
+    padding: 9px 0;
+    border: none;
+    z-index: 2500;
+    transition: all .4s ease;
+
+}
+.btn-brand:hover{
+    color: white !important;
+    border: #f25c6c;
+    cursor: pointer !important;
+    background-image: linear-gradient(to left, #f25c6c,#d3c310);
+
+}
+
+
+@media only screen and (max-width:500px) {
+    .banner-content h6{
+       
+        font-size: 35px;
+    
+    }
+    .banner-content p{
+        
+        font-size: 17px;
+        
+    
+    }
+}
+
+
+section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#intro{
+    padding-bottom: 50px;
+}
+#intro h6{
+    font-weight: 700;
+    font-size: 35px;
+}
+#intro p{
+    font-weight: 500;
+    font-size: 16px;
+    color: grey;
+    max-width: 500px;
+    margin: auto;
+    
+}
+.s-icon{
+    font-size: 55px;
+    color: #f25c6c;
+}
+
+/* price  */
+.basic{
+   
+    height: 600px;
+    position: relative;
+    /* background: linear-gradient(-45deg,#a85f71,#feae3f); */
+    /* background: linear-gradient(-45deg,#f403d1,#64b5f6); */
+    background: linear-gradient(#ffafbd,#d5b2ef);          
+}
+.standard{
+    height: 700px;
+}
+.premium{
+    height: 600px;
+}
+.head h3{
+    font-size: 35px;
+    color: #f25c6c;
+    padding-top: 20px;
+    font-weight: 700;
+    padding-bottom: 35px;
+   
+}
+.price-space{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+}
+.price-space .price-box{
+  
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg,#a7193c,#f0ce9ee5);
+
+
+}
+.price-box .sign{
+    font-size: 25px;
+}
+.price-box .amount{
+    font-size: 35px;
+}
+.price-box .cents{
+    font-size: 15px;
+}
+.basic ul hr{
+    width: 100%;
+}
+.basic li{
+    font-size: 18px;
+    /* border-bottom: 1px solid black; */
+    padding: 7px 0px;
+
+
+   
+}
+.p-icon{
+    
+    color: #f25c6c;
+    margin-right: 15px;
+}
+.btn-price{
+    width: 250px;
+    height: 50px;
+    border: 1px solid #f25c6c;
+    color: #f25c6c;
+    background-color: white;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+   
+}
+
+/* call to action */
+
+#calltoaction{
+    max-height: 60vh;
+    background-image: linear-gradient(to right, rgba(255,0,0,0),#910AFA),url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+.call-content h3{
+    color: white;
+    font-size: 45px !important;
+    font-weight: 700;
+
+}
+.call-content P{
+    color: white;
+    font-size: 20px !important;
+    font-weight: 500;
+    padding: 15px 0;
+
+}
+.call-form{
+    background-color: white;
+    border-radius: 50px;
+    max-width: 570px;
+    margin: auto;
+    position: relative;
+    padding: 12px 0 12px 15px;
+    margin-top: 30px;
+    
+}
+.call-form i{
+    color: #f25c6c;
+    font-size: 20px;
+    padding-right: 10px;
+    vertical-align: middle;
+
+}
+.call-form input{
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+.call-form button{
+    background-image: linear-gradient(to right, #535CF1,#A147E4);
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width:500px) {
+    .call-content h3{
+        font-size: 25px !important;
+    }
+    .call-content P{
+        font-size: 15px !important;
+    }
+    .call-form i{
+        font-size: 20px;
+        padding-right: 0px;
+    }
+    .call-form{
+        max-width: 400px;
+        padding: 12px 20px 12px 15px;
+
+    }
+    .call-form button{
+        margin-top: 15px;
+    }
+}
+
+
+/* form  */
+
+#form input{
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 17px;
+    outline: none;
+    border: none !important;
+    /* border: 1px solid #000; */
+    box-shadow:1px 1px 10px rgb(98, 96, 96);
+}
+#form textarea{
+    width: 100%;
+    font-size: 17px;
+    outline: none;
+    /* border: 1px solid #000; */
+    border: none !important;
+    border-radius: 15px;
+    padding: 5px 10px;
+    box-shadow:1px 1px 10px rgb(98, 96, 96);
+
+
+   
+}
+#form .btn{
+    
+    margin-top: 35px;
+}
+
+/* footer  */
+#footer{
+    background-image:linear-gradient(rgba(244, 125, 137, 0.662),rgba(11, 11, 11, 0.708)), url(../images/project1.jpg);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#footertop .navbar-brand{
+    color: white !important;
+    margin-left: 20px !important;
+}
+
+#footer h5{
+    color: white !important;
+    font-size: 18px;
+    padding-bottom: 15px;
+
+}
+
+#footer li a{
+    font-size: 15px;
+    color: white !important;
+    transition: all .2s ease;
+}
+.footer-form input{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    /* border-radius: 30px; */
+    padding: 0px 12px;
+    position: relative;
+    max-width: 225px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 40px; 
+
+}
+.footer-form button{
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 0;
+    background-color: rgb(9, 167, 189); 
+    color: white;
+    /* font-size: 15px; */
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    left: -5px;
+    height: 40px;
+    top: 1.5px;
+    width: 50px;
+
+
+}
+.footer-form i{
+    font-size: 21px;
+}
+
+#footer-news p{
+    color: white !important;
+    padding: 10px 10px !important;
+}
+
+#footer-bottom{
+    border-top: 1px solid white;
+}
+#footer-bottom p{
+    color: white !important;
+    margin-top: 15px;
+    font-weight: 500;
+}
